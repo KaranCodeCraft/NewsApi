@@ -13,7 +13,7 @@ export default class NewsItem extends Component {
               {content}
             </p>
             <a href={url} target="_blank" className="btn btn-dark" rel="noreferrer">
-              Read News for more detail
+              Read News
             </a>
           </div>
         </div>
