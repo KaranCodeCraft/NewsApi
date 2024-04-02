@@ -78,6 +78,7 @@ export default class NewsComponent extends Component {
                   imgUrl={element.urlToImage}
                   url={element.url}
                   time={element.publishedAt}
+                  source={element.source.name}
                 />
               </div>
             );

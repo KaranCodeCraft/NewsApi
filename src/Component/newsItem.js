@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class NewsItem extends Component {
   render() {
-    let { title, content, imgUrl, url, time} = this.props;
+    let { title, content, imgUrl, url, time, source} = this.props;
     return (
       <div className="my-3 mx-3">
         <div className="card" style={{ width: "18rem" }}>
@@ -16,8 +16,13 @@ export default class NewsItem extends Component {
             alt="this"
             l
           />
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-succ ess">
+          {source}
+        </span>
+          
           <div className="card-body">
-            <h5 className="card-title">{title}</h5>
+            <h5 className="card-title">{title} </h5>
+            
             <p className="card-text">{content}</p>
             <a
               href={url}
