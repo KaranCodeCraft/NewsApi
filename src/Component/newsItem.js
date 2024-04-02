@@ -16,7 +16,7 @@ export default class NewsItem extends Component {
             alt="this"
             l
           />
-          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+          <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
           {source}
         </span>
           
@@ -32,7 +32,7 @@ export default class NewsItem extends Component {
             >
               Read News
             </a>
-            <div class="card-footer text-muted my-2">{time}</div>
+            <div className="card-footer text-muted my-2">{time}</div>
           </div>
         </div>
       </div>

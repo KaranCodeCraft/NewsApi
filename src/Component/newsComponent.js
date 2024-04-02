@@ -18,7 +18,7 @@ export default class NewsComponent extends Component {
     super();
     this.state = {
       articles: [],
-      loading: false,
+      loading: true,
       page: 1
     };
   }
