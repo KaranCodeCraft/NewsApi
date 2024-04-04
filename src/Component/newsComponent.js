@@ -25,7 +25,6 @@ export default class NewsComponent extends Component {
       loading: true,
       page: 1
     };
-    document.title = `${this.capitalize(this.props.category)} - NewsMonkey`;
   }
   
   async updateNews(){
