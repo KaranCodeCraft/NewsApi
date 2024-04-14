@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 
 export default function navBar() {
-  let handleNavLinkClick =(title)=> {
+  const handleNavLinkClick =(title)=> {
     document.title = "NewsMonkey || "+title; // Set the document title
   }
   return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <Link className="navbar-brand" to="/" onClick={() => handleNavLinkClick('Home')}>NewsMonkey</Link>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
